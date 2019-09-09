@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.startsWith(g!))({PREFIX})=== 'ping') {
+    if (message.content.startsWith(g!)) === 'ping') {
        message.reply(`${message.client.ping}`);
        }
 });
