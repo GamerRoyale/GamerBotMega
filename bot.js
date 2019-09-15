@@ -32,7 +32,7 @@ client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 
  
 
-client.on('message', message => {
+client('message', message => {
 
     if (message.content === 'founder') {
 
