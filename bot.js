@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'help') {
+    if (message.content === 'g!help') {
 
        message.reply('Dieser Bot wird zurzeit noch programmiert');
 
@@ -32,7 +32,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'founder') {
+    if (message.content === 'g!founder') {
 
        message.reply('Gamer Royale#9637');
 
@@ -44,4 +44,24 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
+
+
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
+
+client.on('ready', () => {
+
+    console.log('I am ready!');
+
+});
+
+ 
+
+client.on('message', message => {
+
+    if (message.content === 'g!ping') {
+
+       message.reply(`${message.client.ping}`);
+
+       }
+
+});
