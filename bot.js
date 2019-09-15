@@ -18,6 +18,12 @@ client.on('message', message => {
 
        message.reply('Dieser Bot wird programmiert');
 
+('message', message => {
+
+    if (message.content === 'ping') {
+
+       message.reply(`${message.client.ping}`)
+
        }
 
 });
