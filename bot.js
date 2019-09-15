@@ -34,7 +34,7 @@ client.on('message', message => {
 
     if (message.content === 'gm!founder') {
 
-       message.reply('@Gamer Royale#9637');
+       message.reply('Gamer Royale#9637');
 
        }
 
