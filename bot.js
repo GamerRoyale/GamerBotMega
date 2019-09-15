@@ -19,6 +19,13 @@ client.on('message', message => {
        message.reply(`${message.client.ping}`);
 
        }
+client.on('message', message => {
+
+    if (message.content === 'help') {
+
+       message.reply('Dieser Bot ist in Entwicklung');
+
+       }
 
 });
 
