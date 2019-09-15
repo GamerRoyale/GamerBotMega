@@ -34,9 +34,9 @@ client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content === 'founder') {
 
-       message.reply(`${message.client.ping}`);
+       message.reply('Gamer Royale#9637');
 
        }
 
