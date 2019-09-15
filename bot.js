@@ -16,7 +16,25 @@ client.on('message', message => {
 
     if (message.content === 'help') {
 
-       message.reply('Dieser Bot wird programmiert');
+       message.reply('Dieser Bot wird zurzeit noch programmiert');
+
+       }
+
+});
+
+client.on('ready', () => {
+
+    console.log('I am ready!');
+
+});
+
+ 
+
+client.on('message', message => {
+
+    if (message.content === 'founder') {
+
+       message.reply('Gamer Royale#9637');
 
        }
 
