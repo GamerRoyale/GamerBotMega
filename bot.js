@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'g!help') {
+    if (message.content === 'gm!help') {
 
        message.reply('Dieser Bot wird zurzeit noch programmiert');
 
@@ -32,7 +32,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'g!founder') {
+    if (message.content === 'gm!founder') {
 
        message.reply('Gamer Royale#9637');
 
@@ -58,7 +58,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'g!ping') {
+    if (message.content === 'gm!ping') {
 
        message.reply(`${message.client.ping}`);
 
