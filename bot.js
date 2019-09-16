@@ -2,6 +2,26 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+
+
+client.on('ready', () => {
+
+    console.log('I am ready!');
+
+});
+
+ 
+
+client.on('message', message => {
+
+    if (message.content === 'gm!help') {
+
+       message.reply('Dieser Bot wird zurzeit noch programmiert');
+
+       }
+
+});
+
  
 
 // THIS  MUST  BE  THIS  WAY
@@ -28,25 +48,6 @@ client.on('message', message => {
        }
 
 });
-
-client.on('ready', () => {
-
-    console.log('I am ready!');
-
-});
-
- 
-
-client.on('message', message => {
-
-    if (message.content === 'gm!help') {
-
-       message.reply('Dieser Bot wird zurzeit noch programmiert');
-
-       }
-
-});
-
 
 
 
