@@ -4,23 +4,10 @@ const client = new Discord.Client();
 
  
 
-client.on('ready', () => {
+// THIS  MUST  BE  THIS  WAY
 
-    console.log('I am ready!');
+„Fun“
 
-});
-
- 
-
-client.on('message', message => {
-
-    if (message.content === 'gm!help') {
-
-       message.reply('Dieser Bot wird zurzeit noch programmiert');
-
-       }
-
-});
 
 client.on('ready', () => {
 
@@ -40,10 +27,23 @@ client.on('message', message => {
 
 });
 
+client.on('ready', () => {
+
+    console.log('I am ready!');
+
+});
+
  
 
-// THIS  MUST  BE  THIS  WAY
+client.on('message', message => {
 
+    if (message.content === 'gm!help') {
+
+       message.reply('Dieser Bot wird zurzeit noch programmiert');
+
+       }
+
+});
 
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
