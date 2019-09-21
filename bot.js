@@ -53,8 +53,8 @@ message.reply(`${message.client.ping}`);
 });
 
 client.on('message', message => {
-+ if (message.content === 'gm!shutdown'){
+ if (message.content === 'gm!shutdown'){
     message.channel.send(`${client.user.tag} wurde heruntergefahren(custom text)`) 
        client.destroy()
-+ }
+  }
   });
