@@ -67,3 +67,4 @@ xp[message.author.id].xp = xp[message.author.id] + xpAdd;
 let nxtLvl = xp[message.author.id].level * 300;
 if(nxtLvl <= xp[message.author.id].xp){
   xp[message.author.id].level = xp[message.author.id].level + 1
+console.log(`level is ${xp[message.author.id].level} `);
