@@ -55,3 +55,15 @@ message.reply(`${message.client.ping}`);
 let xp = require("./xp.json")
 let xpAdd = Math.floor(Math.random() * 7) +8
 console.log(xpAdd);
+if(!xp[message.author.id]){
+xp[message.author.id]= {
+xp: 0,
+level: 1
+};
+}
+
+xp[message.author.id].xp = xp[message.author.id] + xpAdd;
+
+let nxtLvl = xp[message.author.id].level * 300;
+if(nxtLvl <= xp[message.author.id].xp){
+  xp[message.author.id].level = xp[message.author.id].level + 1
