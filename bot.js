@@ -53,3 +53,9 @@ message.reply(`${message.client.ping}`);
 });
 
 
+client.on('message', message => {
+ if (message.content === 'gm!shutdown'){
+    message.channel.send(`${client.user.tag} wurde heruntergefahren(Bei Fragen an Gamer Royale#9637 wenden!)`) 
+       client.destroy()
+  }
+  });
