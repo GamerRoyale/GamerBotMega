@@ -63,8 +63,15 @@ level: 1
 }
 
 xp[message.author.id].xp = xp[message.author.id] + xpAdd;
-
+let curxp = xp[message.author.id].xp;
+let curxp = xp[message.author.id].level;
 let nxtLvl = xp[message.author.id].level * 300;
 if(nxtLvl <= xp[message.author.id].xp){
   xp[message.author.id].level = xp[message.author.id].level + 1
 console.log(`level is ${xp[message.author.id].level} `);
+
+}
+
+fs.writeFile("./xp.json", JSON.stringify(xp) (err) => {
+if (err) console.log(err)
+});
