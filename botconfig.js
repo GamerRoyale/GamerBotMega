@@ -51,3 +51,7 @@ if (message.content === 'gm!ping') {
 message.reply(`${message.client.ping}`);
 }
 });
+
+let xp = require("./xp.json")
+let xpAdd = Math.floor(Math.random() * 7) +8
+console.log(xpAdd);
