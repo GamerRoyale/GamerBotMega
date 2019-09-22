@@ -55,9 +55,4 @@ message.reply(`${message.client.ping}`);
 
 
 
-client.on('message', message => {
- if (message.content === 'gm!start'){
-    message.channel.send(`${client.user.tag} wurde gestartet(Bei Fragen an Gamer Royale#9637 wenden!)`) 
-       client.restart()
-  }
-  });
+
