@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
+client.user.setActivity("gm!");
+
  
 
 client.on('ready', () => {
