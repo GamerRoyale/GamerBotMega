@@ -16,7 +16,8 @@ client.on('message', message => {
 
     if (message.content === 'gm!help') {
 
-       message.reply('Befehle werden noch hinzugefügt');
+       message.reply('**Fun**
+„gm!ping“, „gm!founder“');
 
        }
 
