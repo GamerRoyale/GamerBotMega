@@ -48,7 +48,7 @@ console.log('I am ready!');
 
 client.on('message', message => {
 if (message.content === 'gm!ping') {
-message.reply(`${message.client.ping}`);
+message.reply -${code}(`${message.client.ping}`);
 }
 });
 
@@ -59,4 +59,3 @@ client.on('message', message => {
        client.restart()
   }
   });
-
