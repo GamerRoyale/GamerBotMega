@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'gm!commands') {
+    if (message.content === 'gm!help') {
 
-       message.reply('Zurzeit sind es 4 „Commands“');
+       message.reply(-${code}'Zurzeit sind es 4 „Commands“');
 
        }
 
