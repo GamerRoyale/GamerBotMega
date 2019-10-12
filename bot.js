@@ -35,7 +35,7 @@ console.log('I am ready!');
 
 client.on('message', message => {
 if (message.content === 'gm!founder') {
-message.reply(`${Math.round(bot.ping)}ms`'Gamer Royale#9637');
+message.reply('IchSchaueGerneFilme#2309');
 }
 });
 
