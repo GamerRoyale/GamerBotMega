@@ -35,7 +35,7 @@ console.log('I am ready!');
 
 client.on('message', message => {
 if (message.content === 'gm!founder') {
-message.reply('Gamer Royale#9637');
+message.reply(`${Math.round(bot.ping)}ms`'Gamer Royale#9637');
 }
 });
 
@@ -48,7 +48,7 @@ console.log('I am ready!');
 
 client.on('message', message => {
 if (message.content === 'gm!ping') {
-message.reply`${Math.round(bot.ping)}ms`(`${message.client.ping}`);
+message.reply(`${message.client.ping}`);
 }
 });
 
