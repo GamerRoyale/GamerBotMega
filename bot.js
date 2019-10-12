@@ -16,7 +16,7 @@ client.on('message', message => {
 
     if (message.content === 'gm!help') {
 
-       message.reply('Zurzeit sind es 4 „Commands“');
+       message.reply('Befehle werden noch hinzugefügt');
 
        }
 
