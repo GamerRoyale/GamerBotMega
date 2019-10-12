@@ -48,7 +48,7 @@ console.log('I am ready!');
 
 client.on('message', message => {
 if (message.content === 'gm!ping') {
-message.reply(`${message.client.ping}`);
+message.reply`${Math.round(bot.ping)}ms`(`${message.client.ping}`);
 }
 });
 
