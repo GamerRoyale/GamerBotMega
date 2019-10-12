@@ -16,8 +16,7 @@ client.on('message', message => {
 
     if (message.content === 'gm!help') {
 
-       message.reply('**Fun**
-„gm!ping“, „gm!founder“');
+       message.reply('**Fun** „gm!ping“, „gm!founder“');
 
        }
 
