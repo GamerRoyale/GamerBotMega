@@ -35,7 +35,7 @@ console.log('I am ready!');
 
 client.on('message', message => {
 if (message.content === 'gm!founder') {
-message.reply('IchSchaueGerneFilme#2309');
+message.reply('Q12 Joshi#9611');
 }
 });
 
